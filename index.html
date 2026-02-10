@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์ดาราศาสตร์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="share-btn" onclick="shareLink()">🔗 แชร์</button>
+
+<h1>🌌 ระบบสุริยะ</h1>
+
+<div class="menu">
+    <button onclick="showPlanet('mercury')">ดาวพุธ</button>
+    <button onclick="showPlanet('venus')">ดาวศุกร์</button>
+    <button onclick="showPlanet('earth')">โลก</button>
+    <button onclick="showPlanet('mars')">ดาวอังคาร</button>
+    <button onclick="showPlanet('jupiter')">ดาวพฤหัสบดี</button>
+    <button onclick="showPlanet('saturn')">ดาวเสาร์</button>
+</div>
+
+<!-- ระบบสุริยะ -->
+<div class="solar-system">
+    <div class="sun"></div>
+
+    <div class="orbit mercury"><div class="planet"></div></div>
+    <div class="orbit venus"><div class="planet"></div></div>
+    <div class="orbit earth"><div class="planet"></div></div>
+    <div class="orbit mars"><div class="planet"></div></div>
+    <div class="orbit jupiter"><div class="planet"></div></div>
+    <div class="orbit saturn"><div class="planet"></div></div>
+</div>
+
+<!-- กล่องข้อมูล -->
+<div id="planetBox">
+    <h2 id="planetName">คลิกดาวเพื่อดูข้อมูล</h2>
+    <p id="planetDetail"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
