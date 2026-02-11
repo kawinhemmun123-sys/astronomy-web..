@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำถามระบบสุริยะ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu">
+  <button onclick="location.href='index.html'">🏠 หน้าแรก</button>
+  <button onclick="location.href='solar.html'">🪐 ระบบสุริยะ</button>
+</div>
+
+<h2>❓ แบบทดสอบระบบสุริยะ</h2>
+
+<div id="quizBox">
+  <h3 id="question"></h3>
+
+  <div class="choices">
+    <button onclick="checkAnswer(0)" id="c0"></button>
+    <button onclick="checkAnswer(1)" id="c1"></button>
+    <button onclick="checkAnswer(2)" id="c2"></button>
+    <button onclick="checkAnswer(3)" id="c3"></button>
+  </div>
+
+  <p id="result"></p>
+  <p>⭐ คะแนน: <span id="score">0</span></p>
+
+  <button onclick="nextQuestion()">➡️ ข้อถัดไป</button>
+</div>
+
+<audio id="correctSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+<audio id="wrongSound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+
+<script src="quiz.js"></script>
+</body>
+</html>

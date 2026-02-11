@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ระบบสุริยะ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu">
+  <button onclick="location.href='index.html'">🏠 หน้าแรก</button>
+  <button onclick="location.href='quiz.html'">❓ แบบทดสอบ</button>
+</div>
+
+<h2>🪐 ระบบสุริยะ</h2>
+
+<div class="solar-system">
+  <div class="sun"></div>
+
+  <div class="orbit mercury" onclick="showPlanet('mercury')"><div class="planet"></div></div>
+  <div class="orbit venus" onclick="showPlanet('venus')"><div class="planet"></div></div>
+  <div class="orbit earth" onclick="showPlanet('earth')"><div class="planet"></div></div>
+  <div class="orbit mars" onclick="showPlanet('mars')"><div class="planet"></div></div>
+  <div class="orbit jupiter" onclick="showPlanet('jupiter')"><div class="planet"></div></div>
+  <div class="orbit saturn" onclick="showPlanet('saturn')"><div class="planet"></div></div>
+  <div class="orbit uranus" onclick="showPlanet('uranus')"><div class="planet"></div></div>
+  <div class="orbit neptune" onclick="showPlanet('neptune')"><div class="planet"></div></div>
+</div>
+
+<div id="planetBox">
+  <h3 id="planetName">คลิกที่ดาว</h3>
+  <img id="planetImage" width="180">
+  <pre id="planetDetail"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
